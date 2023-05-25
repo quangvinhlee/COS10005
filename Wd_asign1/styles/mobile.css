@@ -1,0 +1,767 @@
+/* Global css */
+@media screen and (max-width: 768px) {
+  
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        z-index: 0;
+        font-family: 'josefin Sans', sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    /* Style homepage  */
+    
+    /* Style hero section  */
+    .hero{
+        width: 100%;
+        height: 60vh;
+        background-image: url('./images/background.jpg');
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    
+    /* Style navbar */
+    .navbar {
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
+        height: 20px;
+    }
+    .navbar .nav_link ul{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .navbar .nav_link ul li {
+        font-weight: 700;
+        font-size: 10px;
+        list-style: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 5px;
+    }
+    .navbar .nav_link ul li a:hover,
+    .navbar .nav_link ul li a.active
+     {
+        background-color: #FFAFAA;
+        transform: scale(1.1);
+    
+    }
+    .navbar .nav_link ul li a {
+        text-decoration: none;
+        color: black;   
+        border-radius: 19px;
+        padding: 4px 8px;
+        transition: all 0.2s ease-in-out;
+    
+    }
+    
+    /* Style display section */
+    .display {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    .display h1{
+        font-weight: 700;
+        font-size: 12px;
+        margin-top: -100px;
+        position: relative;
+        width: max-content;
+        
+    }
+    
+    .display h3{
+        font-weight: 700;
+        font-size: 10px;
+    }
+    
+    .display a {
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: rgb(25, 102, 94);
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 12px;
+        transition: all 0.2s ease-in-out;
+        margin-top: 20px;
+    }
+    
+    .display h1::before,
+    .display h1::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .display h1::before {
+        background: white;
+        animation: typewriter 4s steps(25) 0.5s forwards;
+    }
+    
+    .display h1::after {
+        width: 0.125em;
+        background: black;
+        animation:
+         typewriter 4s steps(25) 0.5s forwards,
+         blink 600ms steps(25) infinite   
+    
+    }
+    
+    /* style subtitle on display section */
+    .subtitle{
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s 5s forwards;
+    }
+    
+    .subtitle #p1{
+        margin-top: 10px;
+        font-size: 8px;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s 5.5s forwards;
+    }
+    .subtitle #p2{
+        font-size: 8px;
+        margin-top: 10px;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s 6.5s forwards;
+    }
+    
+    .subtitle a {
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s 7s forwards;
+    }
+    
+    /* Style about me section */
+    #about_container {    
+        background: linear-gradient(to right, #fff ,#F9BCB9, #F6958F, #F26C61, #F79323, #D98626);
+        height: 50vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-top: 15px;
+    }
+    
+    .about {
+        margin-top: 550px;
+    }
+    
+    .about h1 {
+        margin-left: 130px;
+        margin-top: -630px;
+        font-size: 22px;
+        margin-bottom: 70px;
+        text-shadow: 2px 2px 4px #333;
+    }
+    
+    .about p {
+        margin-top: -40px;
+        padding: 30px 20px;
+        font-size: 12px;
+    }
+    
+    /* Style hobbies section */
+    #hobbies_container {
+        background: linear-gradient(to top right, #fff ,#F9BCB9, #F6958F, #F26C61, #F79323, #D98626);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        height: 70vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 10px;
+    }
+    .hobbies {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-top: 450px;
+    }
+    .hobbies h1 {
+        font-size: 22px;
+        margin-left: 120px;
+        margin-top: -600px;
+        text-shadow: 2px 2px 4px #333;
+    }
+    
+    .hobbies h2 {
+        font-weight: 700;
+        font-size: 18px;
+        padding: 5px;
+        text-shadow: 2px 2px 4px #333;
+    }
+    
+    .hobbies p {
+        font-size: 12px;
+        padding-bottom: 3px;
+    }
+    
+    .hobbies a:hover {
+        color:#F26C61;
+    }
+    
+    .hobbies a, li {
+        font-size: 12px;
+    }
+    
+    #p3 {
+        font-style: italic;
+        margin-left: -700px;
+        font-size: 12px;
+    }
+    
+    /* Style hometown section */
+    #Hometown_container {
+      background: linear-gradient(to right, #F9BCB9, #F6958F, rgb(242,108,97));
+      height: 90vh;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      margin-top: 20px;
+      background-size: cover;
+    }
+     .hometown {
+      margin-top: 40px;
+    }
+    
+    .hometown h1 {
+      margin-top: -100px;
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      padding: 30px;
+      text-shadow: 2px 2px 4px #333;
+    }
+    
+    .hometown h2, .hometown2 h2{
+      font-size: 20px;
+      padding: 20px;
+      text-shadow: 2px 2px 4px #333;
+    }
+    .hometown p, .hometown2 p{
+      float: left;
+      width: 50%;
+      font-size: 10px;
+      text-indent: 30px;
+      white-space: pre-line;
+      margin-left: 10px;
+    }
+    
+    .hometown img, .hometown2 img {
+      float: right;
+      height: 180px;
+      width: auto;
+    }
+    
+    .hometown2 {
+      margin-top: 220px;
+    }
+    
+    /* style academic section */
+      #academic_container {
+          height: 50vh;
+          padding-top: 100px;
+          padding-bottom: 100px;
+          margin-top: 40px;
+          background-size: cover;
+      }
+      
+      .academic h1{
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      text-shadow: 2px 2px 4px #333;
+      margin-top: -70px;
+      }
+    
+      .academic h2 {
+      font-size: 18px;
+      padding: 20px;
+      text-shadow: 2px 2px 4px #333;
+    
+      }
+      /* style timetable */
+      .timetable {
+      width: auto !important;
+    }
+    .timetable p {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .timetable table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .timetable td, th {
+      border: 1px solid black;
+      text-align: center;
+      padding: 6px 1px;
+      font-size: 8px;
+    }
+    
+    .timetable th {
+      background-color: hsl(0, 0%, 70%);
+    }
+    
+    .time {
+      background-color: #F9BCB9;
+    }
+    
+    .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
+      background-color: #F6958F;
+    }
+    
+    /* style note section */
+    .note {
+        margin-top: 3px;
+      border: 1px solid black;
+      float: right;
+      font-size: 10px;
+      padding: 3px;
+    }
+    
+    /* style feedback section */
+    .feedback {
+      margin-top: 60px;
+      margin-left: 13px;
+    }
+    
+    .feedback h2 {
+      font-size: 18px;
+    }
+    
+    .feedback p {
+      font-size: 12px;
+    }
+    
+    .feedback form {
+      display: inline;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+    }
+    
+    .feedback form label {
+      width: 100px;
+      margin-right: 20px;
+      font-size: 12px;
+    }
+    /* style in taekwondo.html page */
+    
+    /* Style background */
+    .taekwondo_background {
+        width: 100%;
+        height: 60vh;
+        background-image: url('./images/taekwondo.jpg');
+        background-size: 100% 100%;
+    }
+    
+    /* Style display section */
+    .Taekwondo_display {
+        position: absolute;
+        top: 25%;
+        left: 2%;
+        right: 25%;
+        transform: translateY(-50%);
+    }
+    
+    .Taekwondo_display h1 {
+        font-weight: 700;
+        font-size: 22px;
+        margin-left: 5px;
+        padding: 10px;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s 0.5s forwards;
+    }
+    
+    
+    
+    .Taekwondo_display h3 {
+        font-size: 16px;
+        text-indent: 20px;
+        margin-top: 5px;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 1s 2.1s forwards;
+    }
+    
+    .Taekwondo_display p {
+        font-size: 10px;
+        text-indent: 15px;
+        transform: translateY(3rem);
+        background-color: white;
+        animation: typewriter 2s forwards;
+        white-space: pre-line;
+        width: 90%;
+    }
+    
+    /* Add typewriter animation */
+    .Taekwondo_display p::before,
+    .Taekwondo_display p::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .Taekwondo_display p::before {
+        background: white;
+        animation: typewriter 3s ease 3s forwards;
+    }
+    
+    .Taekwondo_display p::after {
+        width: 0.125em;
+        background: black;
+        animation:
+         typewriter 3s ease 3s forwards,
+         blink 10s ease forwards   
+    
+    }
+    
+    .taekwondo-text {
+        font-size: 22px;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 4px #333;
+        border-bottom: 3px solid black;
+        padding: 0 0 10px 0;
+        margin: 0;
+        display: inline-block;
+      }
+      
+      /* style my achievement section */
+        .My_achievement, .future_aim {
+        clear: both;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    
+      .My_achievement h1{
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    
+      .My_achievement h3 {
+        font-size: 21px;
+        padding: 10px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    
+      .achievement, .friends {
+        float: left;      
+        width: 45%;
+        clear: both;
+        }
+    
+      #my_tkd {
+        font-size: 12px !important;
+        font-style: italic;
+        padding: 10px;
+        text-indent: 20px;
+    }
+    
+        .friends p, .achievement p,    .future_aim p 
+        {
+            font-size: 12px;
+            text-indent: 10px;
+            white-space: pre-line;
+        }
+    
+        /* Style img slider section */
+        .slider {
+            padding-top: 20px;
+            float: right;
+            position: relative;
+            width: 50%;
+            overflow: hidden;
+            padding-bottom: 40px;
+        }
+    
+        .images {
+         display: flex;
+        height: 205px;
+    
+        }
+    
+        .images  img {
+        width: 100%;
+        float: right;
+        display: inline;
+        justify-content: space-between;
+        clear: both;
+        transition: all 0.15s ease;
+        object-fit: cover;
+      }
+    
+      .images input{
+        display: none;
+      }
+    
+      .dots {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+      }
+    
+      .dots label {
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        border:3px solid black ;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        margin: 5px;
+      }
+    
+      .dots label:hover {
+        background: black;
+      }
+    
+      .img_description {
+        display: flex; 
+        justify-content: center;
+        font-size: 15px;
+        font-style: italic; 
+      }
+    
+      /*change to other images when dots is clicked */
+      #img1:checked ~ .fr1 {
+        margin-left: 0;
+      }
+      #img2:checked ~ .fr2 {
+        margin-left: -100%;
+      }
+      #img3:checked ~ .fr3 {
+        margin-left: -200%;
+      }
+     
+      #acv1:checked ~ .acv1 {
+        margin-left: 0%;
+      }
+      #acv2:checked ~ .acv2 {
+        margin-left: -100%;
+      }
+      
+      #acv3:checked ~ .acv3 {
+        margin-left: -200%;
+      }
+    
+      /* style future aim section */
+      .future_aim {
+        margin-bottom: 50px;
+    }
+    
+       .future_aim h1 {
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px #333;  
+    }
+
+    .future_aim p {
+        font-size: 12px;
+    }
+    
+    .future_aim hr{
+        width: 100%;
+        margin: 20px 0;
+      }
+      
+        hr {
+            margin-top: 10px;
+        }
+    
+        /* style footer of all page */
+       footer {
+        margin-top: 10px;
+       }
+    
+       footer h3{
+        margin-left: 5px;
+       }
+    
+       footer li{
+        list-style: none;
+        float: left;
+        margin-left: 10px;
+        width: 50%;
+        padding: 5px;
+    }
+    
+       footer a {
+        color: black;
+        font-size: 12px;
+       }
+    
+       footer div {
+        float: right;
+        margin-top: -50px;
+        clear: both;
+       }
+    
+       footer div p {
+        justify-content: space-between;
+        font-size: 12px;
+        margin-top: -40px;
+        padding: 20px;
+        width: 50%;
+       }
+       
+    
+      /* Style contact page */
+    
+      /* Style contact section */
+      .contact_container {
+        width: 100%;
+        margin-top: 1.5px;
+        position: absolute;
+      }
+      .contact-info{
+        flex-direction: column;
+      }
+      
+    
+      .contact_box {
+        border: 2px solid black;
+        box-sizing:border-box;
+        margin: 15px 15px;
+        background-color: #F9BCB9;
+      }
+      #contact {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        padding-bottom: 0;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 2px 2px 4px #333;
+    
+      }
+    
+      .contact {
+        margin-top: -150px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .card{
+        background: #2f3542;
+        padding: 0 20px;
+        margin: 30px 10px;
+        width: calc(33% - 20px);
+        height: 150px;
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+      }
+      .card a{
+        text-decoration: none !important;
+        
+    }
+      .card-icon{
+        font-size: 28px;
+        background: #ff6348;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px !important;
+        border-radius: 50%;
+        transition: 0.3s linear;
+      }
+      
+      .card:hover .card-icon{
+        background: none;
+        color: #ff6348;
+        transform: scale(1.6);
+      }
+      
+      .card p{
+        margin-top: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        max-height: 0;
+        opacity: 0;
+        transition: 0.3s linear;
+      }
+      
+      .card:hover p{
+        max-height: 40px;
+        opacity: 1;
+      }
+      
+      /* style animation page */
+  
+  .animation_page {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 35vh;
+  }
+
+  .animation_page h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+  }
+  
+  .animation_page p {
+    font-size: 12px;
+  }
+
+  .animation_page ol li{
+    margin-left: 20px;
+    padding: 2px;
+  }
+
+  /* Style footer on animation page */
+
+.footer {
+  margin-top: 15px;
+}
+      
+    
+      /* All animation here */
+     @keyframes typewriter {
+        to { 
+            left: 100%;
+        }
+    } 
+    
+    @keyframes blink {
+    to {
+        background: transparent;
+        }
+    }
+    
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    }
+      
+    

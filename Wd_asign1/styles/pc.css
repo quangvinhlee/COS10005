@@ -1,0 +1,768 @@
+/* Global css */
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 0;
+    font-family: 'josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Style homepage  */
+
+/* Style hero section  */
+.hero{
+    width: 100%;
+    height: 100vh;
+	background-image: url('./images/background.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+/* Style navbar */
+.navbar {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.navbar .nav_link ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.navbar .nav_link ul li {
+    font-weight: 700;
+    font-size: 25px;
+    list-style: none;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.navbar .nav_link ul li a:hover,
+.navbar .nav_link ul li a.active
+ {
+    background-color: #FFAFAA;
+	transform: scale(1.1);
+
+}
+.navbar .nav_link ul li a {
+    text-decoration: none;
+    color: black;   
+    border-radius: 19px;
+    padding: 6px 15px;
+	transition: all 0.2s ease-in-out;
+
+}
+
+/* Style display section */
+.display {
+    position: absolute;
+	top: 60%;
+	left: 7%;
+	transform: translateY(-50%);
+}
+.display h1{
+    font-weight: 700;
+    font-size: 52px;
+    margin-top: -100px;
+    position: relative;
+    width: max-content;
+    
+}
+
+.display h3{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.display a {
+    display: inline-block;
+	padding: 10px 30px;
+	background-color: rgb(25, 102, 94);
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: all 0.2s ease-in-out;
+	margin-top: 20px;
+}
+
+.display h1::before,
+.display h1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.display h1::before {
+    background: white;
+    animation: typewriter 4s steps(25) 0.5s forwards;
+}
+
+.display h1::after {
+    width: 0.125em;
+    background: black;
+    animation:
+     typewriter 4s steps(25) 0.5s forwards,
+     blink 600ms steps(25) infinite   
+
+}
+
+/* style subtitle on display section */
+.subtitle{
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s 5s forwards;
+}
+
+.subtitle #p1{
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s 5.5s forwards;
+}
+.subtitle #p2{
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s 6.5s forwards;
+}
+
+.subtitle a {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s 7s forwards;
+}
+
+/* Style about me section */
+#about_container {    
+    background: linear-gradient(to right, #fff ,#F9BCB9, #F6958F, #F26C61, #F79323, #D98626);
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 40px;
+}
+
+.about {
+    margin-top: 550px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.about h1 {
+    margin-top: -650px;
+    font-size: 70px;
+    margin-bottom: 70px;
+    text-shadow: 2px 2px 4px #333;
+}
+
+.about p {
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Style hobbies section */
+#hobbies_container {
+    background: linear-gradient(to top right, #fff ,#F9BCB9, #F6958F, #F26C61, #F79323, #D98626);
+	background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    height: 145vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.hobbies {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 450px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+.hobbies h1 {
+    font-size: 70px;
+    margin-top: -550px;
+    text-shadow: 2px 2px 4px #333;
+}
+
+.hobbies h2 {
+    font-weight: 700;
+    font-size: 45px;
+    padding: 5px;
+    text-shadow: 2px 2px 4px #333;
+}
+
+.hobbies p {
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.hobbies a:hover {
+    color:#F26C61;
+}
+
+.hobbies a, li {
+    font-size: 20px;
+}
+
+#p3 {
+    font-style: italic;
+    margin-left: -700px;
+    font-size: 25px;
+}
+
+/* Style hometown section */
+#Hometown_container {
+  background: linear-gradient(to right, #F9BCB9, #F6958F, rgb(242,108,97));
+  height: 190vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 40px;
+  background-size: cover;
+}
+ .hometown {
+  margin-top: 40px;
+}
+
+.hometown h1 {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  padding: 30px;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.hometown h2, .hometown2 h2{
+  font-size: 30px;
+  padding: 20px;
+  text-shadow: 2px 2px 4px #333;
+}
+.hometown p, .hometown2 p{
+  float: left;
+  width: 60%;
+  font-size: 25px;
+  text-indent: 40px;
+  white-space: pre-line;
+  margin-left: 20px;
+}
+
+.hometown img, .hometown2 img {
+  float: right;
+  height: 400px;
+  width: auto;
+  margin-right: 100px;
+}
+
+.hometown2 {
+  margin-top: 28em;
+}
+
+/* style academic section */
+  #academic_container {
+      height: 110vh;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      margin-top: 40px;
+      background-size: cover;
+  }
+  
+  .academic h1{
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px #333;
+  margin-top: -70px;
+  }
+
+  .academic h2 {
+  font-size: 40px;
+  padding: 20px;
+  text-shadow: 2px 2px 4px #333;
+
+  }
+  /* style timetable */
+  .timetable {
+  margin: 20px auto;
+  width: 1380px !important;
+}
+.timetable p {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+}
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timetable td, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 18px;
+}
+
+.timetable th {
+  background-color: hsl(0, 0%, 70%);
+}
+
+.time {
+  background-color: #F9BCB9;
+}
+
+.COS10005 , .TNE10006 , .COS10009 , .COS10026 {
+  background-color: #F6958F;
+}
+
+/* style note section */
+.note {
+  border: 1px solid black;
+  float: right;
+  font-size: 20px;
+}
+
+/* style feedback section */
+.feedback {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.feedback h2 {
+  font-size: 30px;
+}
+
+.feedback p {
+  font-size: 20px;
+}
+
+.feedback form {
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.feedback form label {
+  width: 100px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+/* style in taekwondo.html page */
+
+/* Style background */
+.taekwondo_background {
+    width: 100%;
+    height: 100vh;
+	background-image: url('./images/taekwondo.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+/* Style display section */
+.Taekwondo_display {
+  position: absolute;
+	top: 45%;
+	left: 2%;
+  right: 45%;
+	transform: translateY(-50%);
+}
+
+.Taekwondo_display h1 {
+    font-weight: 700;
+    font-size: 70px;
+    margin-left: 100px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s 0.5s forwards;
+}
+
+
+
+.Taekwondo_display h3 {
+    font-size: 30px;
+    text-indent: 40px;
+    margin-top: 15px;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1s 2.1s forwards;
+}
+
+.Taekwondo_display p {
+    font-size: 25px;
+    text-indent: 30px;
+    transform: translateY(3rem);
+    background-color: white;
+    animation: typewriter 2s forwards;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+/* Add typewriter animation */
+.Taekwondo_display p::before,
+.Taekwondo_display p::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.Taekwondo_display p::before {
+    background: white;
+    animation: typewriter 3s ease 3s forwards;
+}
+
+.Taekwondo_display p::after {
+    width: 0.125em;
+    background: black;
+    animation:
+     typewriter 3s ease 3s forwards,
+     blink 10s ease forwards   
+
+}
+
+.taekwondo-text {
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #333;
+    border-bottom: 3px solid black;
+    padding: 0 0 10px 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  /* style my achievement section */
+    .My_achievement, .future_aim {
+    clear: both;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .My_achievement h1{
+    display: flex;
+    font-size: 65px;
+    justify-content: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .My_achievement h3 {
+    font-size: 50px;
+    padding: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .achievement, .friends {
+    float: left;      
+    width: 45%;
+    clear: both;
+    }
+
+  #my_tkd {
+    font-size: 20px !important;
+    font-style: italic;
+    padding: 20px;
+    text-indent: 40px;
+}
+
+    .friends p, .achievement p,    .future_aim p 
+    {
+        font-size: 30px;
+        text-indent: 60px;
+        white-space: pre-line;
+    }
+
+    /* Style img slider section */
+    .slider {
+        padding-top: 20px;
+        float: right;
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+        padding-bottom: 40px;
+    }
+
+    .images {
+     display: flex;
+    height: 400px;
+
+    }
+
+    .images  img {
+    width: 100%;
+    float: right;
+    display: inline;
+    justify-content: space-between;
+    clear: both;
+    transition: all 0.15s ease;
+    object-fit: cover;
+  }
+
+  .images input{
+    display: none;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border:3px solid black ;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+
+  .dots label:hover {
+    background: black;
+  }
+
+  .img_description {
+    display: flex; 
+    justify-content: center;
+    font-size: 25px;
+    font-style: italic; 
+  }
+
+  /*change to other images when dots is clicked */
+  #img1:checked ~ .fr1 {
+    margin-left: 0;
+  }
+  #img2:checked ~ .fr2 {
+    margin-left: -100%;
+  }
+  #img3:checked ~ .fr3 {
+    margin-left: -200%;
+  }
+ 
+  #acv1:checked ~ .acv1 {
+    margin-left: 0%;
+  }
+  #acv2:checked ~ .acv2 {
+    margin-left: -100%;
+  }
+  
+  #acv3:checked ~ .acv3 {
+    margin-left: -200%;
+  }
+
+  /* style future aim section */
+  .future_aim {
+    margin-bottom: 50px;
+}
+
+.future_aim hr{
+  width: 100%;
+  margin: 20px 0;
+}
+   .future_aim h1 {
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    text-shadow: 2px 2px 4px #333;  
+}
+
+    hr {
+        margin-top: 30px;
+    }
+
+    /* style footer of all page */
+   footer {
+    margin-top: 20px;
+   }
+
+   footer h3{
+    margin-left: 20px;
+   }
+
+   footer li{
+    margin-left: 30px;
+    display: inline;
+    justify-content: space-between;
+    padding: 20px;
+   }
+
+   footer a {
+    color: black;
+    font-size: 18px;
+   }
+
+   footer div {
+    display: flex;
+    float:right;
+   }
+
+   footer div p {
+    justify-content: space-between;
+    font-size: 18px;
+    padding-right: 20px;
+    margin-right: 50px;
+    margin-top: -19px;
+   }
+   
+
+  /* Style contact page */
+
+  /* Style contact section */
+  .contact_container {
+    width: 100%;
+    margin-top: 1.5px;
+    position: absolute;
+  }
+  .contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .contact_box {
+    border: 2px solid black;
+    box-sizing:border-box;
+    margin: 50px 100px;
+    background-color: #F9BCB9;
+  }
+  #contact {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #333;
+
+  }
+
+  .contact {
+    margin-top: -150px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card{
+    background: #2f3542;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  .card a{
+    text-decoration: none !important;
+    
+}
+  .card-icon{
+    font-size: 28px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.6);
+  }
+  
+  .card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
+  
+  /* style animation page */
+  
+  .animation_page {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+  }
+
+  .animation_page h1 {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top:30px ;
+  }
+  
+  .animation_page p {
+    font-size: 22px;
+  }
+
+  .animation_page ol li{
+    margin-left: 50px;
+    padding: 5px;
+  }
+
+  /* Style footer on animation page */
+
+.footer {
+  margin-top: 15px;
+}
+
+  /* All animation here */
+ @keyframes typewriter {
+    to { 
+        left: 100%;
+    }
+} 
+
+@keyframes blink {
+to {
+    background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
+  

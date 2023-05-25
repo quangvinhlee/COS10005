@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sweet Life Ice Cream Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.adobe.com/fonts/bakemono-variable#fonts-section">
+  </head>
+  <body class="hero">
+    <div>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><span class="sweet">SWE</span><span class="ET">ET</span> <span class="life">LIFE</span></a>
+                </div>
+                <div class="nav-links">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#" id="menu-link1">Menu</a></li>
+                      <li><a href="fetures.html">Fetures</a></li>
+                      <li><a href="index.html" id="login-button">Login</a></li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+        </div>
+        <div class="register_form">
+            <h1>Registration Form</h1>
+        	<form id="registration-form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+        		<label for="username">Username:</label>
+        		<input type="text" id="username" name="username" required>
+        		
+        		<label for="password">Password:</label>
+        		<input type="password" id="password" name="password" required>
+        		<label for="confirm-password">Confirm password:</label>
+        		<input type="password" id="confirm-password" name="confirm-password" required>
+        		
+        		<label>Gender:</label>
+        		<div class="radio-group">
+        			<label for="gender-male">
+        				<input type="radio" id="gender-male" name="gender" value="male" > Male
+        			</label>
+        			<label for="gender-female">
+        				<input type="radio" id="gender-female" name="gender" value="female" > Female
+        			</label>
+        		</div>
+        		
+        		<label for="email">Email:</label>
+        		<input type="email" id="email" name="email" required>
+        		
+        		<label for="icecream">Favorite ice cream:</label>
+        		<select id="icecream" name="icecream" >
+        			<option value="">--Please choose an option--</option>
+        			<option value="vanilla">Vanilla</option>
+        			<option value="chocolate">Chocolate</option>
+        			<option value="strawberry">Strawberry</option>
+        			<option value="other">Other</option>
+        		</select>
+        		
+        		<input type="submit" value="Register">
+        	</form>
+        </div>
+
+          <div id="menu-popup">
+            <a href="register.html" id="menu-close-button">&times;</a>
+            <h1>Menu</h1>
+            <div id="div1">
+              <div>
+                <img src="./images/vanila.jpg" alt="Vanila ice-cream" class="img1">
+                <p>Vanila ice-cream</p>
+                <a href="./order.html">$5.00</a>
+              </div>
+              <div>
+                <img src="./images/strawberry.jpg" alt="Strawberry ice-cream" class="img1">
+                <p>Strawberry ice-cream</p>
+                <a href="./order.html">$5.00</a>
+              </div>
+              <div>
+                <img src="./images/chocolate.jpg" alt="Chocolate ice-cream" class="img1">
+                <p>Chocolate ice-cream</p>
+                <a href="./order.html">$5.00</a>
+              </div>
+            </div>
+            <div>
+              <img src="./images/chocolate.jpeg" alt="Balls chocolate ice-cream" class="img2"> 
+              <p>Balls chocolate ice-cream</p>
+              <a href="./order.html">$10.00</a>
+            </div>
+            <div>
+              <img src="./images/1.jpeg" alt="Balls strawbbery ice-cream" class="img2">
+              <p>Balls strawbbery ice-cream</p>
+              <a href="./order.html">$10.00</a>
+            </div>
+            <div>
+              <img src="./images/2.jpeg" alt="Balls Vanila ice-cream" class="img2">
+              <p>Balls Vanila ice-cream</p>
+              <a href="./order.html">$10.00</a>
+            </div>
+            <div>
+              <img src="./images/Ballslemonandberryicecream.jpeg" alt="Balls lemon and berry ice cream" class="img2">
+              <p>Balls lemon and berry ice cream</p>
+              <a href="./order.html">$10.00</a>
+            </div>
+        <p>&copy; 2023 Sweet Life Ice Cream Shop</p>
+
+          </div>
+<hr>
+    <footer>
+      <p>&copy; 2023 Sweet Life Ice Cream Shop</p>
+    </footer>
+
+  </body>
+</html>

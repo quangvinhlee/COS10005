@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8" > 
+        <meta name="description" content="Web development" > 
+        <meta name="keywords"    content="HTML (Part 1 – Content - Form)" > 
+        <meta name="author"      content="put your name here" > 
+        <title>Web Development Survey</title> 
+      </head> 
+<body>
+    <h1>Unit Delivery Survey</h1>
+    <p>Please enter your name, gender and degree program below</p>
+    <form id="survey" method="post" 
+          action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"> 
+    <fieldset>
+        <fieldset>
+            <legend><label>How do you rate the lecture materials?</label></legend>
+            <input type="radio" id="lecture-excellent" name="lecture-rating" value="Excellent">
+            <label for="excellent">Excellent</label><br>
+            <input type="radio" id="lecture-good" name="lecture-rating" value="Good">
+            <label for="good">Good</label><br>
+            <input type="radio" id="lecture-fair" name="lecture-rating" value="Fair">
+            <label for="fair">Fair</label><br>
+            <input type="radio" id="lecture-poor" name="lecture-rating" value="Poor">
+            <label for="poor">Poor</label><br>
+        </fieldset>
+            <fieldset>
+                <legend><label>How do you rate the lab materials?</label></legend>
+                <input type="radio" id="lab-excellent" name="lab-rating" value="Excellent">
+            <label for="excellent">Excellent</label><br>
+            <input type="radio" id="lab-good" name="lab-rating" value="Good">
+            <label for="good">Good</label><br>
+            <input type="radio" id="lab-fair" name="lab-rating" value="Fair">
+            <label for="fair">Fair</label><br>
+            <input type="radio" id="lab-poor" name="lab-rating" value="Poor">
+            <label for="poor">Poor</label><br>
+            </fieldset>
+        </p>
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="reset" id="reset">
+    </fieldset>
+</form>
+    <a href="Survey03.html">Previous</a>
+    <a href="Survey05.html">Next</a>
+
+</body>
+
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8" > 
+        <meta name="description" content="Web development" > 
+        <meta name="keywords"    content="HTML (Part 1 – Content - Form)" > 
+        <meta name="author"      content="put your name here" > 
+        <title>Web Development Survey</title> 
+      </head> 
+<body>
+    <h1>Unit Delivery Survey</h1>
+    <p>Please enter your name, gender and degree program below</p>
+    <form id="survey" method="post" 
+          action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"> 
+    <fieldset>
+        <fieldset>
+    <legend><label>Which browser do you know how to use? (Check all that applies)</label></legend>
+    <input type="checkbox" id="chrome" name="browser[]" value="Chrome" >
+    <label for="chrome">Chrome</label><br>
+    <input type="checkbox" id="firefox" name="browser[]" value="Firefox">
+    <label for="firefox">Firefox</label><br>
+    <input type="checkbox" id="ie" name="browser[]" value="Internet Explorer">
+    <label for="ie">Internet Explorer</label><br>
+    <input type="checkbox" id="safari" name="browser[]" value="Safari">
+    <label for="safari">Safari</label><br>
+</fieldset>
+    <fieldset>
+        <legend><label>Which text editor do you know how to use? (Check all that applies)</label></legend>
+        <input type="checkbox" id="komodo" name="texteditor[]" value="Komodo" >
+        <label for="komodo">Komodo</label><br>
+        <input type="checkbox" id="Notepad++" name="texteditor[]"value="Notepad">
+        <label for="notepad">Notepad++</label><br>
+        <input type="checkbox" id="sublimetext" name="texteditor[]" value="Sublimetext">
+        <label for="sublimetext">Sublime Text</label><br>
+        <input type="checkbox" id="wrangler" name="texteditor[]" value="Wrangler">
+        <label for="wrangler">Wrangler</label>
+    </fieldset>
+    <input type="submit" >
+        <input type="reset" name="reset" id="reset">
+    </fieldset>
+</form>
+    <a href="Survey02.html">Previous</a>
+    <a href="Survey04.html">Next</a>
+    
+
+</body>
+
+
+</html>
