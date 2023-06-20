@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sweet Life Ice Cream Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.adobe.com/fonts/bakemono-variable#fonts-section">
+  </head>
+  <body class="hero">
+    <div>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html#welcome"><span class="sweet">SWE</span><span class="ET">ET</span> <span class="life">LIFE</span></a>
+                </div>
+                <div class="nav-links">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#" id="menu-link1">Menu</a></li>
+                      <li><a href="order.html" id="order" class="active"> Order</a></li>
+                      <li><a href="features.html">Features</a></li>
+                      <li><a href="register.html">Register</a></li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+        </div>
+        <div class="order">
+     <h1>Place an Order</h1>
+    <form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="POST" id="order-form">
+        <label for="delivery-option">Delivery or Pickup:</label>
+        <select name="delivery-option" id="delivery-option">
+            <option value="delivery">Delivery</option>
+            <option value="pickup">Pickup</option>
+        </select>
+        <br>
+
+        <label for="delivery-address" id="delivery-address-label">Delivery Address:</label>
+<input type="text" name="delivery-address" id="delivery-address" >
+        <br>
+        
+        <label for="billing-address" id="billing-address-label">Billing Address:</label>
+        <input type="text" name="billing-address" id="billing-address">
+        <br>
+        <div class="checkbox-container">
+          <input type="checkbox" name="same-as-delivery" id="same-as-delivery">
+          <label for="same-as-delivery" id="same-as-delivery-label">Same as Delivery Address</label>
+      </div>
+        <label for="postcode-address" id="postcode-address-label">Postcode:</label>
+        <input type="text" name="postcode-address" id="postcode-address">
+        <br>
+      
+      
+        <label for="contact-number">Contact Number:</label>
+        <input type="text" name="contact-number" id="contact-number">
+        <br>
+
+        <label for="email">Email for Receipt:</label>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="payment-option">Pay on Pickup or Online:</label>
+        <select name="payment-option" id="payment-option">
+          <option value="online">Pay Online</option>
+            <option value="pickup">Pay on Pickup</option>
+        </select>
+        <br>
+        <label for="payment-method" id="payment-method-label">Select Card:</label>
+        <select name="payment-method" id="payment-method">
+            <option value="">Select card</option>
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="American Express">American Express</option>
+        </select>
+        <br>
+
+       
+  
+
+        <label for="credit-card" id="credit-card-label">Credit Card Number:</label>
+        <input type="text" name="credit-card" id="credit-card">
+        <br>
+
+        <input type="submit" value="Place Order">
+    </form>
+        </div>
+        <div id="menu-popup">
+          <a href="order.html" id="menu-close-button">&times;</a>
+          <h1>Menu</h1>
+          <div id="div1">
+            <div>
+              <img src="./images/vanila.jpg" alt="Vanila ice-cream." class="img1">
+              <p>Vanila ice-cream</p>
+              <a href="#">$5.00</a>
+            </div>
+            <div>
+              <img src="./images/strawberry.jpg" alt="Strawberry ice-cream." class="img1">
+              <p>Strawberry ice-cream</p>
+              <a href="#">$5.00</a>
+            </div>
+            <div>
+              <img src="./images/chocolate.jpg" alt="Chocolate ice-cream." class="img1">
+              <p>Chocolate ice-cream</p>
+              <a href="#">$5.00</a>
+            </div>
+          </div>
+          <div>
+            <img src="./images/chocolate.jpeg" alt="Balls chocolate ice-cream." class="img2"> 
+            <p>Balls chocolate ice-cream</p>
+            <a href="#">$10.00</a>
+          </div>
+          <div>
+            <img src="./images/1.jpeg" alt="Balls strawbbery ice-cream." class="img2">
+            <p>Balls strawbbery ice-cream</p>
+            <a href="#">$10.00</a>
+          </div>
+          <div>
+            <img src="./images/2.jpeg" alt="Balls Vanila ice-cream." class="img2">
+            <p>Balls Vanila ice-cream</p>
+            <a href="#">$10.00</a>
+          </div>
+          <div>
+            <img src="./images/3.jpeg" alt="Balls lemon and berry ice cream." class="img2">
+            <p>Balls lemon and berry ice cream</p>
+            <a href="#">$10.00</a>
+          </div>
+      <p>&copy; 2023 Sweet Life Ice Cream Shop</p>
+
+        </div>
+        <footer>
+      <p>&copy; 2023 Sweet Life Ice Cream Shop</p>
+      
+    </footer>
+  </body>
+</html>
